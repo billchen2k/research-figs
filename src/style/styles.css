@@ -1,0 +1,36 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  padding: 12px;
+}
+
+h2::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.no-line line {
+  stroke: none;
+}
+
+.no-line path {
+  stroke: none;
+}
+
+.light-line line {
+  stroke: #cccccc;
+}
+
+.light-line path {
+  stroke: #cccccc;
+}
