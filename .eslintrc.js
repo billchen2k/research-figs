@@ -25,6 +25,15 @@ module.exports = {
     'camelcase': 'warn',
   },
   settings: {
+    'import/resolver': {
+      // Allow `@/` to map to `src/`
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+      },
+    },
   },
   ignorePatterns: ['templates/**'],
 };

@@ -1,9 +1,10 @@
 // @ts-nocheck
 
-import SVGBox from './SVGBox';
+import SVGBox from '@/lib/SVGBox';
 import * as d3 from 'd3';
 
 export default class ScoringResultRenderer extends SVGBox {
+
   public kde(kernel, thresholds, data) {
     return thresholds.map((t) => [t, d3.mean(data, (d) => kernel(t - d))]);
   }

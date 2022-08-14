@@ -3,8 +3,8 @@
 import * as d3 from 'd3';
 
 export default class SVGBox {
-  private svg: any;
-  private containerId: string = '';
+  protected svg: any;
+  protected containerId: string = '';
 
   constructor(containerId: string) {
     if (!document.getElementById(containerId)) {

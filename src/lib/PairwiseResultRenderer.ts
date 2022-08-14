@@ -1,11 +1,8 @@
 // @ts-nocheck
 import * as d3 from 'd3';
-import SVGBox from './SVGBox';
+import SVGBox from '@/lib/SVGBox';
 
 export default class PairwiseResultRenderer extends SVGBox {
-  constructor(containerId: string) {
-    super(containerId);
-  }
 
   public async draw() {
     const height = 400;
