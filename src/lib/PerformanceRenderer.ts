@@ -14,8 +14,8 @@ export default class PerformanceRenderer extends SVGBox {
     const barPadding = 3;
     const gridXRatio = 0.32;
     const margin = {
-      left: 10,
-      right: 10,
+      left: 0,
+      right: 5,
       top: 50,
       bottom: 20,
     };
@@ -67,7 +67,7 @@ export default class PerformanceRenderer extends SVGBox {
         .range([0, gridXLarge(columns[5]) - gridXLarge(columns[4])]);
 
     const valueXTime = d3.scaleLinear()
-        .domain([0, 16.5])
+        .domain([0, 15])
         .range([0, gridXLarge(columns[5]) - gridXLarge(columns[4])]);
 
     const colors = d3.scaleOrdinal()

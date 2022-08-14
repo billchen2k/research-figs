@@ -5,14 +5,14 @@ import SVGBox from '@/lib/SVGBox';
 export default class PairwiseResultRenderer extends SVGBox {
 
   public async draw() {
-    const height = 400;
-    const width = 600;
+    const height = 270;
+    const width = 400;
     const circleR = 5;
     const margin = {
-      top: 100,
-      left: 100,
-      bottom: 50,
-      right: 100,
+      top: 50,
+      left: 50,
+      bottom: 10,
+      right: 10,
     };
 
     this.svg
@@ -69,7 +69,7 @@ export default class PairwiseResultRenderer extends SVGBox {
         .style('font-weight', 'bold')
         .attr('class', 'no-line')
         .attr('transform', `translate(${margin.left}, ${- gridY.bandwidth() / 2})`)
-        .call(d3.axisLeft(gridY).tickPadding(20)
+        .call(d3.axisLeft(gridY).tickPadding(10)
             .tickSize(0),
         );
 

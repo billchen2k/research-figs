@@ -4,7 +4,6 @@ import SVGBox from '@/lib/SVGBox';
 import * as d3 from 'd3';
 
 export default class ScoringResultRenderer extends SVGBox {
-
   public kde(kernel, thresholds, data) {
     return thresholds.map((t) => [t, d3.mean(data, (d) => kernel(t - d))]);
   }
@@ -14,8 +13,8 @@ export default class ScoringResultRenderer extends SVGBox {
   }
 
   public async draw() {
-    const width = 700;
-    const height = 380;
+    const width = 500;
+    const height = 300;
     const config = {
       bandwidth: 1.5,
       wiggleMax: 0.22,
@@ -24,8 +23,8 @@ export default class ScoringResultRenderer extends SVGBox {
     };
 
     const margin = {
-      left: 150,
-      top: 50,
+      left: 92,
+      top: 30,
       right: 20,
       bottom: 20,
     };
@@ -130,14 +129,30 @@ export default class ScoringResultRenderer extends SVGBox {
             .tickSize(0)
             .tickPadding(10),
         );
-    this.svg.append('g')
-        .attr('transform', `translate(${margin.left}, 0)`)
-        .style('font-size', '14px')
-        .style('font-weight', 'bold')
-        .call(d3.axisLeft(gridY)
-            .tickSize(5)
-            .tickPadding(10),
-        );
+
+    // this.svg.append('g')
+    //     .attr('transform', `translate(${margin.left}, 0)`)
+    //     .style('font-size', '14px')
+    //     .style('font-weight', 'bold')
+    //     .call(d3.axisLeft(gridY)
+    //         .tickSize(5)
+    //         .tickPadding(10),
+    //     );
+    this.svg.selectAll('.type-text')
+        .data(graphTypes)
+        .enter()
+        .append('text')
+        .attr('class', 'type-text axis-text-bold')
+        .attr('x', margin.left - 10)
+        .attr('y', (d) => gridY(d) + gridY.bandwidth() / 2 - 15 - 10 * (d.split(' ').length - 1))
+        .selectAll()
+        .data((d) => d.split(' '))
+        .join('tspan')
+        .attr('dy', '20')
+        .attr('x', 85)
+        .attr('text-anchor', 'end')
+        .text((d) => d);
+
 
     const violins = this.svg.selectAll('.violin')
         .data(plots)
