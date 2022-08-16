@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://billc.oss-cn-shanghai.aliyuncs.com/file/2022-08-14-perSim.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "resolution",
+      "type": "nominal",
+      "title": "Resolution"
+    },
+    "xOffset": {
+      "field": "node",
+      "title": "Node Count"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "text",
+        "angle": -45,
+        "yOffset": -130
+      },
+      "encoding": {
+        "x": {
+          "field": "resolution"
+        },
+        "text": {
+          "field": "node"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "black"
+      },
+      "encoding": {
+        "y": {
+          "field": "lower",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "title": "Perceptual Similarity"
+        },
+        "y2": {
+          "field": "upper"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "size": 14,
+        "opacity": 0.5
+      },
+      "encoding": {
+        "y": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "q3"
+        },
+        "color": {
+          "field": "method",
+          "type": "nominal",
+          "legend": {
+            "title": "Method"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "tick",
+        "color": "white",
+        "size": 14
+      },
+      "encoding": {
+        "y": {
+          "field": "median",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

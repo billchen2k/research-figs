@@ -17,6 +17,9 @@ export default class SVGBox {
 
   public abstract draw();
 
+  /**
+   * This method won't work. CSS won't be injected into the generated SVG file, use with care.
+   */
   public appendDownloader() {
     // get svg element.
     const svg = document.getElementById(this.containerId);

@@ -2,7 +2,6 @@
 
 import SVGBox from '@/lib/SVGBox';
 import * as d3 from 'd3';
-import {style} from 'd3';
 
 export default class PerformanceRenderer extends SVGBox {
   private COLUMN_STRUSIM = 'Structural Similarity (a)';
