@@ -9,6 +9,7 @@
     "moduleResolution": "node",
     "target": "es5",
     "allowJs": true,
+    "jsx": "react-jsx",
     "paths": {
       "@/*": [
         "./src/*"

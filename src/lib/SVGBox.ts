@@ -3,7 +3,7 @@
 import * as d3 from 'd3';
 
 export default class SVGBox {
-  protected svg: any;
+  protected svg: d3.Selection<SVGElement, any, any, any>;
   protected containerId: string = '';
 
   constructor(containerId: string) {

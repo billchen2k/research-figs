@@ -1,0 +1,194 @@
+{
+  "Q1@text@usefulness": {
+    "low": 2.9278,
+    "high": 3.6222
+  },
+  "Q1@text@transparency": {
+    "low": 2.1527,
+    "high": 2.8473
+  },
+  "Q1@visual@usefulness": {
+    "low": 3.546,
+    "high": 4.304
+  },
+  "Q1@visual@transparency": {
+    "low": 3.3028,
+    "high": 4.1472
+  },
+  "Q2@text@usefulness": {
+    "low": 2.586,
+    "high": 3.214
+  },
+  "Q2@text@transparency": {
+    "low": 3.4262,
+    "high": 3.8738
+  },
+  "Q2@visual@usefulness": {
+    "low": 2.897,
+    "high": 3.603
+  },
+  "Q2@visual@transparency": {
+    "low": 3.7389,
+    "high": 4.2611
+  },
+  "Q3@text@usefulness": {
+    "low": 2.6527,
+    "high": 3.3473
+  },
+  "Q3@text@transparency": {
+    "low": 2.103,
+    "high": 2.797
+  },
+  "Q3@visual@usefulness": {
+    "low": 3.0113,
+    "high": 3.9387
+  },
+  "Q3@visual@transparency": {
+    "low": 3.1218,
+    "high": 3.9282
+  },
+  "Q4@text@usefulness": {
+    "low": 3.2602,
+    "high": 3.8898
+  },
+  "Q4@text@transparency": {
+    "low": 3.5928,
+    "high": 4.1572
+  },
+  "Q4@visual@usefulness": {
+    "low": 3.5496,
+    "high": 4.2004
+  },
+  "Q4@visual@transparency": {
+    "low": 4.0041,
+    "high": 4.5459
+  },
+  "Q5@text@usefulness": {
+    "low": 2.0271,
+    "high": 2.5729
+  },
+  "Q5@text@transparency": {
+    "low": 1.7795,
+    "high": 2.3205
+  },
+  "Q5@visual@usefulness": {
+    "low": 2.3293,
+    "high": 3.0707
+  },
+  "Q5@visual@transparency": {
+    "low": 2.9673,
+    "high": 3.7827
+  },
+  "Q6@text@usefulness": {
+    "low": 3.8774,
+    "high": 4.4726
+  },
+  "Q6@text@transparency": {
+    "low": 3.5834,
+    "high": 4.1166
+  },
+  "Q6@visual@usefulness": {
+    "low": 4.1409,
+    "high": 4.6591
+  },
+  "Q6@visual@transparency": {
+    "low": 3.9719,
+    "high": 4.5281
+  },
+  "Q7@text@usefulness": {
+    "low": 3.2091,
+    "high": 3.6409
+  },
+  "Q7@text@transparency": {
+    "low": 2.4281,
+    "high": 3.0719
+  },
+  "Q7@visual@usefulness": {
+    "low": 4.1973,
+    "high": 4.6527
+  },
+  "Q7@visual@transparency": {
+    "low": 3.5536,
+    "high": 4.3464
+  },
+  "Q8@text@usefulness": {
+    "low": 3.3834,
+    "high": 3.9166
+  },
+  "Q8@text@transparency": {
+    "low": 2.1681,
+    "high": 2.8319
+  },
+  "Q8@visual@usefulness": {
+    "low": 4.0176,
+    "high": 4.5824
+  },
+  "Q8@visual@transparency": {
+    "low": 3.7321,
+    "high": 4.4679
+  },
+  "Q9@text@usefulness": {
+    "low": 3.367,
+    "high": 3.883
+  },
+  "Q9@text@transparency": {
+    "low": 3.4242,
+    "high": 3.8258
+  },
+  "Q9@visual@usefulness": {
+    "low": 3.9176,
+    "high": 4.4824
+  },
+  "Q9@visual@transparency": {
+    "low": 4.1382,
+    "high": 4.6118
+  },
+  "Q10@text@usefulness": {
+    "low": 2.9946,
+    "high": 3.5554
+  },
+  "Q10@text@transparency": {
+    "low": 2.4536,
+    "high": 3.0464
+  },
+  "Q10@visual@usefulness": {
+    "low": 3.7251,
+    "high": 4.4749
+  },
+  "Q10@visual@transparency": {
+    "low": 3.4182,
+    "high": 4.2818
+  },
+  "Q11@text@usefulness": {
+    "low": 3.1678,
+    "high": 3.7822
+  },
+  "Q11@text@transparency": {
+    "low": 2.2509,
+    "high": 2.9991
+  },
+  "Q11@visual@usefulness": {
+    "low": 3.9536,
+    "high": 4.5464
+  },
+  "Q11@visual@transparency": {
+    "low": 3.8437,
+    "high": 4.5563
+  },
+  "Q12@text@usefulness": {
+    "low": 3.2849,
+    "high": 3.7651
+  },
+  "Q12@text@transparency": {
+    "low": 3.102,
+    "high": 3.748
+  },
+  "Q12@visual@usefulness": {
+    "low": 4.1894,
+    "high": 4.7106
+  },
+  "Q12@visual@transparency": {
+    "low": 3.9748,
+    "high": 4.6752
+  }
+}

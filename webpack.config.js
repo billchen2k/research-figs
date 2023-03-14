@@ -3,10 +3,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -42,6 +45,8 @@ const config = {
   ],
   resolve: {
     extensions: [
+      '*',
+      '.jsx',
       '.tsx',
       '.ts',
       '.js',

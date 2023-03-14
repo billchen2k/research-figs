@@ -1,0 +1,13 @@
+﻿category,number_of_class,number_of_class_filterd,count_original,count_filtered,count_sample,max_samecluster,sample_class,sc
+Businesses & Manufacturing,8,7,92883,92086,40193,2,"Office Building, Factory",0.393
+Education,15,15,11344,11344,9222,4,"Library, University",0.148
+Food & Catering,8,6,30371,29209,16101,3,"Dessert Shop, Restaurant",0.507
+Government & Public Infrastructure,12,11,32616,31273,17876,2,Government Affairs Center,0.397
+Healthcare,11,10,8762,5860,5552,3,"Clinic, Pharmacy",0.734
+Life Services,14,13,130235,44295,22018,3,"Post Office, Public Toilet",0.424
+Residential,3,3,39754,39754,24305,2,"Dormitory, Residentail Area",0.670
+Retail & Shopping,10,8,42201,42044,23648,0,"Supermarket, Shopping Mall",0.453
+Social & Entertainment,19,15,14422,12139,9921,5,"Dance Hall, Theater",0.447
+Sports,2,2,6598,6598,4881,0,"Stadium, Gym",0.931
+Transportation,16,9,45635,22493,18734,1,"Airport, Subway Station",0.572
+Travel & Attractions,15,14,13777,10091,6791,3,"Amusement Park, Beach",0.605

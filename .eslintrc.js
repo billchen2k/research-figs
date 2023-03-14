@@ -16,8 +16,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    'require-jsdoc': 'warn',
-    'max-len': 'warn',
+    'require-jsdoc': 'off',
+    'max-len': 'off',
     'no-unused-vars': 'warn',
     'spaced-comment': 'warn',
     'valid-jsdoc': 'warn',
